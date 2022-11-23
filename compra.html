@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87493ae31f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Compra final</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+</head>
+<body class="bg-light">
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+    <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Ventlib</span>
+    </a>
+    <div class="buscar">
+      <input type="text" name="" id="" placeholder="Busca tu libro acá!" required>
+      <div class="btn2">
+        <i class="fas fa-search icon"></i>
+      </div>
+    </div>
+</header>
+<nav class="py-2 bg-light border-bottom" style="text-align: center">
+    <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Lo más vendido | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Lo más buscado | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Novedades | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Ficción | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Infantil | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Juvenil | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Ofertas Flash | </a></li>
+    </ul>
+      <ul class="nav2">
+        <a href="#" class="fa-solid fa-user fa-1x d-inline p-2 bor rounded-circle"></a>
+        <a href="compra.html" class="fa-solid fa-cart-shopping fa-2x d-inline p-2"></a>
+        <a href="#" class="fa-solid fa-heart fa-2x d-inline p-2"></a>
+      </ul>
+    </div>
+</nav><br>
+<nav class="py-2 bg-light border-bottom" >
+  <div class="container d-flex flex-wrap">
+  <ul class="nav me-auto">
+      <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Inicio ></a></li>
+      <li class="nav-item"><a href="compra.html" class="nav-link link-dark px-2"> Pago</a></li>
+  </ul>
+  </div>
+</nav><br>
+  <div class="container">
+    
+    <main>  
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Tus pedidos</span>
+            <span class="badge bg-primary rounded-pill">1</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Nombre del Producto</h6>
+                <small class="text-muted">El mal Acecha</small>
+              </div>
+              <span class="text-muted">S/47.94</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Descuento</h6>
+                <small class="text-muted">Precio sin Descuento</small>
+              </div>
+              <span class="text-muted"><del>S/79.90</del></span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Codigo de Promocion</h6>
+                <small>Ninguno</small>
+              </div>
+              <span class="text-success">-S/</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total</span>
+              <strong>S/47.94</strong>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Datos para entrega</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="username" class="form-label">Correo</label>
+                <div class="input-group has-validation">
+                  <input type="email" class="form-control" id="username" placeholder="ejemplo@abc.com.pe" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <label for="address" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="address" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+  
+              <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Departamento</option>
+                    <option value="">Amazonas</option>
+                    <option value="">Ancash</option>
+                    <option value="">Apurimac</option>
+                    <option value="">Arequipa</option>
+                    <option value="">Ayacucho</option>
+                    <option value="">Cajamarca</option>
+                    <option value="">Callao</option>
+                    <option value="">Cusco</option>
+                    <option value="">Huancavelica</option>
+                    <option value="">Huanuco</option>
+                    <option value="">Ica</option>
+                    <option value="">Junin</option>
+                    <option value="">La Libertad</option>
+                    <option value="">Lambayeque</option>
+                    <option value="">Lima</option>
+                    <option value="">Loreto</option>
+                    <option value="">Madre de Dios</option>
+                    <option value="">Moquegua</option>
+                    <option value="">Pasco</option>
+                    <option value="">Piura</option>
+                    <option value="">Puno</option>
+                    <option value="">San Martín</option>
+                    <option value="">Tacna</option>
+                    <option value="">Tumbes</option>
+                    <option value="">Ucayali</option>
+                </select>
+            </div>
+  
+            <div class="col-sm-6">
+              <select class="form-select" id="country" required>
+                  <option value="">Provincia</option>
+                  <option value="">Lima</option>
+                  <option>Huaura</option>
+                  <option>Barranca</option>
+                  <option>Cajatambo</option>
+                  <option>Canta</option>
+                  <option>Cañete</option>
+                  <option>Huaral</option>
+                  <option>Huarochiri</option>
+                  <option>Oyón</option>
+                  <option>Yauyos</option>
+              </select>
+            </div>
+  
+            <div class="col-sm-6">
+              <select class="form-select" id="country" required>
+                  <option value="">Distrito</option>
+                  <option>Ancón</option>
+                  <option>Ate Vitarte</option>
+                  <option>Barranco</option>
+                  <option>Breña</option>
+                  <option>Carabayllo</option>
+                  <option>Chaclacayo</option>
+                  <option>Chorrillos</option>
+              </select>
+            </div>
+  
+            <hr class="my-4"> 
+  
+            <h4 class="mb-3">Tipo de Pago</h4>
+  
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Tarjeta de Crédito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Tarjeta de Débito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+  
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nombre de la Tarjeta</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Debe escribir el nombre completo</small>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+  
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Numero de tarjeta</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Expiracion</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Este campo es requerido
+                </div>
+              </div>
+            </div>
+  
+            <hr class="my-4">
+  
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Pagar</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <hr class="my-4"> 
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-1 col-md-2 mb-1">
+            <h5>Nosotros</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos?</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tiendas</a></li><br>
+              <h5>Politicas</h5>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politicas de privacidad</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Políticas de Cookies</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y Condiciones</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas Frecuentes</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-1" style="margin-left: 5%;">
+            <h5>Categorias</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#lib1" class="nav-link p-0 text-muted">Lo más vendido</a></li>
+              <li class="nav-item mb-2"><a href="#lib2" class="nav-link p-0 text-muted">Lo más buscado</a></li>
+              <li class="nav-item mb-2"><a href="#lib3" class="nav-link p-0 text-muted">Novedades</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Infantil</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Juvenil</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-1">
+            <h5>Atencion al cliente</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">(01) 123-4567</li>
+              <li class="nav-item mb-2">912 345 678</li>
+              <li class="nav-item mb-2">Ventlib@gmail.com.pe</li>
+              <li class="nav-item mb-2">(Lun-Sab 8 a.m. a 8 p.m.)</li><br>
+              <a href="reclamos.html"><img src="img/libro_reclamaciones.PNG" alt="" width="70%" style="width:150px; height: 100px;border:3px solid rgb(74, 151, 170);border-radius:22px;"></a>
+            </ul>
+          </div>   
+
+          <div class="col-md-4 offset-md-1 mb-3" >
+            <form>
+              <h5 style="margin-bottom:20px">Suscribete para mantenerte al tanto</h5>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+                <button class="btn btn-primary" type="button">Suscribete</button>
+              </div>
+              <div class="red-social" style="margin-top:10% ;">
+                <h5 style="margin-bottom:20px">Siguenos en nuestras redes sociales</h5>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+              </div>
+              <div><br><br>
+                <h5>Motodos de Pago</h5>
+                <img src="img/metodos_pago.PNG" alt="">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2022 Ventlib SAC. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

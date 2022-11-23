@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Libro de Reclamaciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/87493ae31f.js" crossorigin="anonymous"></script>
+    <link href="style-reclamo.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <header class="py-3 mb-4 border-bottom">
+    <div class="container d-flex flex-wrap justify-content-center">
+    <a href="#" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+        <span class="fs-4">Ventlib</span>
+    </a>
+    <form class="col-12 col-lg-auto mb-3 mb-lg-0"  role="search">
+        <input type="search" class="form-control" placeholder="Busca tu libro acá!" aria-label="Search">
+    </form>
+    </div>
+</header>
+<nav class="py-2 bg-light border-bottom" style="text-align: center">
+    <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Lo más vendido | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Lo más buscado | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Novedades | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Ficción | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Infantil | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Juvenil | </a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2"> Ofertas Flash | </a></li>
+    </ul>
+    <ul class="nav">
+        <li class="nav-item"><a href="login.html" class="nav-link link-dark px-2">Iniciar Sesión</a></li>
+        <li class="nav-item"><a href="logout.html" class="nav-link link-dark px-2">Registrate</a></li>
+    </ul>
+    </div>
+</nav><br>
+<div class="container">
+    <nav class="py-2 bg-light border-bottom" >
+        <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link link-dark px-2 active" aria-current="page">Inicio ></a></li>
+            <li class="nav-item"><a href="reclamos.html" class="nav-link link-dark px-2"> Libro de Reclamaciones</a></li>
+        </ul>
+        </div>
+    </nav>
+    <div class="py-5 text-left" style="margin-top: 1%;">
+      <h2>Libro de Reclamaciones</h2><br>
+      <p class="lead">Conforme a lo establecido en el código de la Protección y Defensa del 
+        consumidor este establecimiento cuenta con un Libro de Reclamaciones para registrar
+         únicamente tus quejas o reclamos. Sin embargo ponemos a tu disposición el correo 
+        <strong>atención@ventlib.com.pe</strong> a fin de que nos hagas llegar tus sugerencias, opiniones, 
+         consultas, entre otros.
+      </p>
+      <p>
+        <strong>Art 24.1 Ley 29571 </strong>
+      </p>
+      <p>
+        <strong>Razón Social: Librerias Ventlib SAC </strong>
+      </p>
+      <p>
+        <strong>RUC: 20108821783</strong>
+      </p>
+      <p>
+        <strong>Direccion: Av. El Derby 254 INT 2002 Urb El Derby de Monterrico, Lima - Lima - Santiago de Surco </strong>
+      </p>
+    </div>
+    <div class="row g-4 ">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">1. Identificacion del cliente o consumidor</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Apellido Paterno</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Su apellido parterno es requerido.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Apellido Materno</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Su apellido materno es requerido.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Nombres</label>
+              <div class="input-group has-validation">
+                <input type="text" class="form-control" id="username"  required>
+              <div class="invalid-feedback">
+                  Sus nombres son requeridos.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Direccion Completa</label>
+              <input type="email" class="form-control" id="email" placeholder="">
+              <div class="invalid-feedback">
+                Por favor, ingrese la dirección completa.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Departamento</option>
+                    <option value="">Amazonas</option>
+                    <option value="">Ancash</option>
+                    <option value="">Apurimac</option>
+                    <option value="">Arequipa</option>
+                    <option value="">Ayacucho</option>
+                    <option value="">Cajamarca</option>
+                    <option value="">Callao</option>
+                    <option value="">Cusco</option>
+                    <option value="">Huancavelica</option>
+                    <option value="">Huanuco</option>
+                    <option value="">Ica</option>
+                    <option value="">Junin</option>
+                    <option value="">La Libertad</option>
+                    <option value="">Lambayeque</option>
+                    <option value="">Lima</option>
+                    <option value="">Loreto</option>
+                    <option value="">Madre de Dios</option>
+                    <option value="">Moquegua</option>
+                    <option value="">Pasco</option>
+                    <option value="">Piura</option>
+                    <option value="">Puno</option>
+                    <option value="">San Martín</option>
+                    <option value="">Tacna</option>
+                    <option value="">Tumbes</option>
+                    <option value="">Ucayali</option>
+                </select>
+            </div>
+  
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Provincia</option>
+                    <option value="">Lima</option>
+                    <option>Huaura</option>
+                    <option>Barranca</option>
+                    <option>Cajatambo</option>
+                    <option>Canta</option>
+                    <option>Cañete</option>
+                    <option>Huaral</option>
+                    <option>Huarochiri</option>
+                    <option>Oyón</option>
+                    <option>Yauyos</option>
+                </select>
+            </div>
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Distrito</option>
+                    <option>Ancón</option>
+                    <option>Ate Vitarte</option>
+                    <option>Barranco</option>
+                    <option>Breña</option>
+                    <option>Carabayllo</option>
+                    <option>Chaclacayo</option>
+                    <option>Chorrillos</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+            </div>
+            <div class="col-sm-6">
+                <select class="form-select" id="country" required>
+                    <option value="">Tipo de Documento</option>
+                    <option>DNI</option>
+                    <option>Carnet Ext.</option>
+                    <option>Pasaporte</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Documento">
+                <div class="invalid-feedback">
+                  Por favor, ingrese la dirección completa.
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Telefono Fijo">
+                <div class="invalid-feedback">
+                Por favor, ingrese un numero correcto
+                </div>
+            </div>
+            <div class="col-md-6">
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su Numero de Celular">
+                <div class="invalid-feedback">
+                Por favor, ingrese un numero correcto
+                </div>
+            </div>
+          </div><br>
+
+
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Menor de Edad</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Mayor de Edad</label>
+          </div>
+          </form>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">2. Identificacion de producto o servicio</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <select class="form-select" id="country" required>
+                        <option>Producto</option>
+                        <option>Servicio</option>
+                    </select>
+                </div>
+  
+              <div class="col-sm-6">
+                <input type="text" class="form-control" id="lastName" placeholder="Monto de reclamo" value="" required>
+                <div class="invalid-feedback">
+                  El monto es importante.
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <div class="input-group has-validation">
+                  <input type="text" class="form-control" id="username" placeholder="Nro. de Boleta o Factura:" required>
+                <div class="invalid-feedback">
+                    El nro es importante.
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-6">
+                <input type="email" class="form-control" id="email" placeholder="Nro. de Pedido">
+                <div class="invalid-feedback">
+                    El nro es importante.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <input type="text" class="form-control" id="address" placeholder="Marca y Nombre del Producto" required>
+                <div class="invalid-feedback">
+                  Complete este campo, porfavor.
+                </div>
+              </div>
+  
+              <div class="col-12">
+                <textarea class="form-control" name="" id="" cols="80" rows="5" placeholder="Descripcion"></textarea>
+              </div>
+            </form>
+        </div>
+    </div>
+    <hr class="my-4">
+    <div class="row g-5" style="margin-top: -50px;">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">3. Detalle de reclamo o queja</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+                <div class="col-sm-6">
+                    <select class="form-select" id="country" required>
+                        <option>Reclamo</option>
+                        <option>Queja</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <input type="text" class="form-control" id="address" placeholder="Detalle" required>
+                    <div class="invalid-feedback">
+                      Complete este campo, porfavor.
+                    </div>
+                  </div>
+                <div class="col-12">
+                    <textarea class="form-control" name="" id="" cols="80" rows="5" placeholder="Descripcion"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <button class=" h-30 w-50 btn btn-primary btn-lg" type="submit">Enviar Queja o Reclamo</button>
+  </main>
+  <hr>
+  <div class="container">
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-1 col-md-2 mb-1">
+          <h5>Nosotros</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Quienes somos?</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tiendas</a></li><br>
+            <h5>Politicas</h5>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politicas de privacidad</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Políticas de Cookies</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terminos y Condiciones</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Preguntas Frecuentes</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-1" style="margin-left: 5%;">
+          <h5>Categorias</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Lo más vendido</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Novedades</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Ficción</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Infantil</a></li>
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Juvenil</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-1">
+          <h5>Atencion al cliente</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">(01) 123-4567</li>
+            <li class="nav-item mb-2">912 345 678</li>
+            <li class="nav-item mb-2">Ventlib@gmail.com.pe</li>
+            <li class="nav-item mb-2">(Lun-Sab 8 a.m. a 8 p.m.)</li><br>
+            <a href="reclamos.html"><img src="img/libro_reclamaciones.PNG" alt="" width="70%" style="width:150px; height: 100px;border:3px solid rgb(74, 151, 170);border-radius:22px;"></a>
+          </ul>
+        </div>   
+
+        <div class="col-md-4 offset-md-1 mb-3" >
+          <form>
+            <h5 style="margin-bottom:20px">Suscribete para mantenerte al tanto</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <input id="newsletter1" type="text" class="form-control" placeholder="Correo Electronico">
+              <button class="btn btn-primary" type="button">Suscribete</button>
+            </div>
+            <div class="red-social" style="margin-top:10% ;">
+              <h5 style="margin-bottom:20px">Siguenos en nuestras redes sociales</h5>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-instagram"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+            </div>
+            <div><br><br>
+              <h5>Motodos de Pago</h5>
+              <img src="img/metodos_pago.PNG" alt="">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>&copy; 2022 Ventlib SAC. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+</div>
+  </body>
+</html>
